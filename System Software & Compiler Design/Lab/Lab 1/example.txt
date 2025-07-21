@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main(){
+    int a, b;
+
+    printf("First program");
+
+    a = 5;
+    b = 10;
+
+    return 0;
+}

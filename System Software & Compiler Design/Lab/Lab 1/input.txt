@@ -1,2 +1,0 @@
-#incldue <stdio.h>
-
