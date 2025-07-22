@@ -1,0 +1,23 @@
+Customer ID: AB1234
+Product ID: PROD123456
+Review Date: 2024-09-15
+Rating: 5
+Review Text: Excellent product. Very useful and affordable.
+
+Customer ID: XY7890
+Product ID: PROD123456
+Review Date: 2024-09-17
+Rating: 4
+Review Text: Good value for money, but packaging could be better.
+
+Customer ID: CD5678
+Product ID: PROD654321
+Review Date: 2024-09-20
+Rating: 3
+Review Text: Average quality, not as expected.
+
+Customer ID: invalid_id
+Product ID: PROD999999
+Review Date: 2024-09-23
+Rating: 5
+Review Text: Great performance.
