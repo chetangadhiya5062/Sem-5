@@ -26,3 +26,4 @@ key = input("Enter the integer key Value here : ")
 cipherText = encryptCipher(plainText, key)
 print("Cipher Text:", cipherText)
 
+
