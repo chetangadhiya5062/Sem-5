@@ -41,7 +41,7 @@ def show_menu():
     print("\n----- Caesar Cipher Menu -----")
     print("1. Encrypt full text with manual key")
     print("2. Encrypt full text with random key")
-    print("3. Encrypt only specific words (selective encryption)")
+    print("3. Encrypt only specific words (for selective encryption)")
     print("4. Decrypt text with known key")
     print("5. View log history")
     print("6. Exit")

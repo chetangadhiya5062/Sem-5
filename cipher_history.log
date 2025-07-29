@@ -1,2 +1,6 @@
 2025-07-22 11:18:56.292964 | Selective Encrypt | Key: 3 | Input: chetan gadhiya is anadi mukta | Output: chetan gadhiya is anadi mukta
 2025-07-22 11:19:29.958200 | Selective Encrypt | Key: 3 | Input: chetan gadhiya is anadi mukta | Output: fkhwdq gadhiya is anadi pxnwd
+2025-07-29 10:05:24.859057 | Manual Encrypt | Key: 3 | Input: chetan | Output: fkhwdq
+2025-07-29 10:06:01.564496 | Random Encrypt | Key: 17 | Input: aashka | Output: rrjybr
+2025-07-29 10:06:19.287089 | Selective Encrypt | Key: 54 | Input: hi I AM XHETN | Output: hi I AM XHETN
+2025-07-29 10:12:26.558122 | Selective Encrypt | Key: 3 | Input: this is the IS class | Output: wklv is the LV class
