@@ -282,11 +282,12 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 4
-#define YY_END_OF_BUFFER 5
-static yyconst short int yy_accept[11] =
+#define YY_NUM_RULES 5
+#define YY_END_OF_BUFFER 6
+static yyconst short int yy_accept[13] =
     {   0,
-        0,    0,    5,    3,    2,    2,    1,    2,    1,    0
+        0,    0,    6,    4,    1,    1,    3,    2,    1,    3,
+        2,    0
     } ;
 
 static yyconst int yy_ec[256] =
@@ -323,31 +324,31 @@ static yyconst int yy_ec[256] =
 
 static yyconst int yy_meta[6] =
     {   0,
-        1,    2,    2,    3,    3
+        1,    2,    2,    3,    4
     } ;
 
-static yyconst short int yy_base[13] =
+static yyconst short int yy_base[16] =
     {   0,
-        0,    0,    8,    9,    0,    0,    0,    0,    0,    9,
-        5,    3
+        0,    0,   10,   11,    0,    0,    0,    0,    0,    0,
+        0,   11,    7,    5,    3
     } ;
 
-static yyconst short int yy_def[13] =
+static yyconst short int yy_def[16] =
     {   0,
-       10,    1,   10,   10,   11,   11,   12,   11,   12,    0,
-       10,   10
+       12,    1,   12,   12,   13,   13,   14,   15,   13,   14,
+       15,    0,   12,   12,   12
     } ;
 
-static yyconst short int yy_nxt[15] =
+static yyconst short int yy_nxt[17] =
     {   0,
-        4,    5,    6,    4,    7,    9,    8,   10,    3,   10,
-       10,   10,   10,   10
+        4,    5,    6,    7,    8,   11,   11,   10,    9,   12,
+        3,   12,   12,   12,   12,   12
     } ;
 
-static yyconst short int yy_chk[15] =
+static yyconst short int yy_chk[17] =
     {   0,
-        1,    1,    1,    1,    1,   12,   11,    3,   10,   10,
-       10,   10,   10,   10
+        1,    1,    1,    1,    1,   15,   15,   14,   13,    3,
+       12,   12,   12,   12,   12,   12
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -361,12 +362,12 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "Lab2.l"
+#line 1 "Lab2_a.l"
 #define INITIAL 0
-#line 2 "Lab2.l"
-    #include <stdio.h>
-    int n = 0;
-#line 370 "lex.yy.c"
+#line 2 "Lab2_a.l"
+#include <stdio.h>
+int token_count = 0;
+#line 371 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -517,9 +518,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 6 "Lab2.l"
+#line 6 "Lab2_a.l"
 
-#line 523 "lex.yy.c"
+#line 524 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -570,13 +571,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 11 )
+				if ( yy_current_state >= 13 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 9 );
+		while ( yy_base[yy_current_state] != 11 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -604,25 +605,39 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "Lab2.l"
-{ printf("Identifier: %s\n" , yytext); ++n;}
+#line 7 "Lab2_a.l"
+; // Ignore whitespace
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "Lab2.l"
-{ /* skip whitespace */ }
+#line 8 "Lab2_a.l"
+{ 
+    token_count++; 
+    printf("Token: %-15s Length: %d\n", yytext, yyleng); 
+}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "Lab2.l"
-{ /* ignore other characters */ }
+#line 12 "Lab2_a.l"
+{ 
+    token_count++; 
+    printf("Token: %-15s Length: %d\n", yytext, yyleng); 
+}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "Lab2.l"
+#line 16 "Lab2_a.l"
+{
+    token_count++; 
+    printf("Token: %-15s Length: %d\n", yytext, yyleng); 
+}
+	YY_BREAK
+case 5:
+YY_RULE_SETUP
+#line 20 "Lab2_a.l"
 ECHO;
 	YY_BREAK
-#line 626 "lex.yy.c"
+#line 641 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -914,7 +929,7 @@ static yy_state_type yy_get_previous_state()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 11 )
+			if ( yy_current_state >= 13 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -949,11 +964,11 @@ yy_state_type yy_current_state;
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 11 )
+		if ( yy_current_state >= 13 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 10);
+	yy_is_jam = (yy_current_state == 12);
 
 	return yy_is_jam ? 0 : yy_current_state;
 	}
@@ -1508,15 +1523,16 @@ int main()
 	return 0;
 	}
 #endif
-#line 14 "Lab2.l"
+#line 20 "Lab2_a.l"
 
-int main(){
-    printf("Enter input (Ctrl+Z or Ctrl+D to end):\n");
+
+int main() {
+    printf("Enter a statement:\n");
     yylex();
-    printf("\nTotal number of identifiers: %d\n", n);
+    printf("\nTotal Tokens: %d\n", token_count);
     return 0;
 }
 
-int yywrap(){
+int yywrap() {
     return 1;
 }
