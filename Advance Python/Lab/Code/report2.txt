@@ -1,0 +1,27 @@
+=== Booking & Revenue Report ===
+
+1) Shatabdi Express
+   Successful Bookings: 2
+   Failed Bookings: 0
+   Total Fare Collected: 4152
+
+2) Rajdhani Express
+   Successful Bookings: 1
+   Failed Bookings: 0
+   Total Fare Collected: 6120
+
+3) Duronto Express
+   Successful Bookings: 2
+   Failed Bookings: 0
+   Total Fare Collected: 2625
+
+4) Garib Rath
+   Successful Bookings: 2
+   Failed Bookings: 0
+   Total Fare Collected: 3120
+
+5) Jan Shatabdi
+   Successful Bookings: 1
+   Failed Bookings: 1
+   Total Fare Collected: 2952
+

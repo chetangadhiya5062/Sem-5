@@ -1,0 +1,27 @@
+=== Train Details ===
+
+1) Shatabdi Express
+   Source: Mumbai
+   Destination: Delhi
+   Seats Available: 297
+
+2) Rajdhani Express
+   Source: Delhi
+   Destination: Kolkata
+   Seats Available: 346
+
+3) Duronto Express
+   Source: Chennai
+   Destination: Bangalore
+   Seats Available: 195
+
+4) Garib Rath
+   Source: Ahmedabad
+   Destination: Jaipur
+   Seats Available: 396
+
+5) Jan Shatabdi
+   Source: Pune
+   Destination: Nagpur
+   Seats Available: 247
+

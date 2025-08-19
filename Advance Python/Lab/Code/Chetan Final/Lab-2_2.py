@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import os
 import traceback
@@ -9,6 +8,7 @@ products_file = os.path.join(dir, "product_names.csv")
 output_file = os.path.join(dir, "sales_summary.csv")
 
 errors = 0
+
 def print_error(e: Exception) -> None:
     tb = traceback.extract_tb(e.__traceback__)
     for filename, line, funcname, text in tb:
@@ -24,9 +24,9 @@ def load(sales_dir: str, products_file: str):
     months = 0
     try:
         for root, _, files in os.walk(sales_dir):
-            sales = pd.concat([sales] + [pd.read_csv(os.path.join(root, file)) for file in files])
-            months += len(files)
-        sales.reset_index(drop=True, inplace=True)
+            for file in files:
+                sales = pd.concat([sales, pd.read_csv(os.path.join(root, file))], ignore_index=True)
+                months += 1
         products = pd.read_csv(products_file)
     except Exception as e:
         print_error(e)
@@ -35,7 +35,7 @@ def load(sales_dir: str, products_file: str):
 
 def process(sales: pd.DataFrame, products: pd.DataFrame, months: int):
     try:
-        totals = sales.groupby(by="Product_ID")["Quantity"].sum()
+        totals = sales.groupby("Product_ID")["Quantity"].sum()
         products["Total"] = products["Product_ID"].map(totals).fillna(0)
         products["Average"] = (products["Total"] / months).round(2)
         top_5 = products.sort_values(by="Total", ascending=False).head(5)
@@ -57,7 +57,7 @@ def func(sales_dir: str, products_file: str, output_file: str):
 def main():
     func(sales_dir, products_file, output_file)
     if errors:
-        print(f"Total number of errors occured -> {errors}")
+        print(f"Total number of errors occurred -> {errors}")
 
 if __name__ == "__main__":
     main()
