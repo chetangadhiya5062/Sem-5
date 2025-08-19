@@ -1,0 +1,6 @@
+Train ID,Train Name,Source Station,Destination Station,Total Seats,Distance
+T001,Shatabdi Express,Mumbai,Delhi,300,1384
+T002,Rajdhani Express,Delhi,Kolkata,350,1530
+T003,Duronto Express,Chennai,Bangalore,200,350
+T004,Garib Rath,Ahmedabad,Jaipur,400,650
+T005,Jan Shatabdi,Pune,Nagpur,250,820
