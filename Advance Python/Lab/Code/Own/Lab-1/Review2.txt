@@ -1,0 +1,23 @@
+Customer ID: GH3456
+Product ID: PROD123456
+Review Date: 2024-09-25
+Rating: 5
+Review Text: Outstanding! Works perfectly.
+
+Customer ID: IJ9012
+Product ID: PROD654321
+Review Date: 2024-10-01
+Rating: 2
+Review Text: Too expensive for the quality provided.
+
+Customer ID: KL345X
+Product ID: PROD000000
+Review Date: 2024-10-05
+Rating: 4
+Review Text: Great design and user-friendly.
+
+Customer ID: MN1234
+Product ID: PRODXYZ1234
+Review Date: Invalid-Date
+Rating: 5
+Review Text: Just loved it!
