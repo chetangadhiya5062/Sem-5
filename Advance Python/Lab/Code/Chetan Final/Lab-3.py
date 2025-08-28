@@ -28,25 +28,28 @@ def book(passenger, trains):
     total_fare = num_tickets * trains.loc[train_index, "Single Fare"]
     return "Success", total_fare
 
-def write_reports(trains, passengers):
-    with open("report1.txt", "w") as f:
-        f.write("=== Train Details ===\n\n")
-        for i, train in trains.iterrows():
-            f.write(f"{i+1}) {train['Train Name']}\n")
-            f.write(f"   Source: {train['Source Station']}\n")
-            f.write(f"   Destination: {train['Destination Station']}\n")
-            f.write(f"   Seats Available: {train['Total Seats']}\n\n")
-    with open("report2.txt", "w") as f:
-        f.write("=== Booking & Revenue Report ===\n\n")
-        for i, train in trains.iterrows():
-            train_id = train["Train ID"]
-            success = passengers[(passengers["Train ID"] == train_id) & (passengers["Status"] == "Success")]
-            failed = passengers[(passengers["Train ID"] == train_id) & (passengers["Status"] == "Failed")]
-            f.write(f"{i+1}) {train['Train Name']}\n")
-            f.write(f"   Successful Bookings: {len(success)}\n")
-            f.write(f"   Failed Bookings: {len(failed)}\n")
-            f.write(f"   Total Fare Collected: {success['Fare'].sum()}\n\n")
 
+def write_reports(trains, passengers):
+        with open("report1.txt", "w") as f:
+            f.write("=== Train Details ===\n\n")
+            for i, train in trains.iterrows():
+                f.write(f"{i+1}) {train['Train Name']}\n")
+                f.write(f"   Source: {train['Source Station']}\n")
+                f.write(f"   Destination: {train['Destination Station']}\n")
+                f.write(f"   Seats Available: {train['Total Seats']}\n\n")
+        with open("report2.txt", "w") as f:
+            f.write("=== Booking & Revenue Report ===\n\n")
+            for i, train in trains.iterrows():
+                train_id = train["Train ID"]
+                success = passengers[(passengers["Train ID"] == train_id) & (passengers["Status"] == "Success")]
+                failed = passengers[(passengers["Train ID"] == train_id) & (passengers["Status"] == "Failed")]
+                f.write(f"{i+1}) {train['Train Name']}\n")
+                f.write(f"   Successful Bookings: {len(success)}\n")
+                f.write(f"   Failed Bookings: {len(failed)}\n")
+                f.write(f"   Total Fare Collected: {success['Fare'].sum()}\n\n")
+    
+
+    
 def main():
     trains = pd.read_csv(TRAINS_FILE)
     passengers = pd.read_csv(PASSENGERS_FILE)

@@ -1,6 +1,6 @@
-1) The total number of reviews processed -> 30
+1) The total number of reviews processed -> 112
 2) The total number of valid reviews -> 28
-3) The total number of invalid reviews -> 2
+3) The total number of invalid reviews -> 84
 4) Top 3 products with the highest average ratings
 	1) NSVSSEHGIJ -> 5.0
 	2) V2S8H8SJBJ -> 4.0

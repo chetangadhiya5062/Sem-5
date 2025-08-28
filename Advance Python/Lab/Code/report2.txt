@@ -21,7 +21,7 @@
    Total Fare Collected: 3120
 
 5) Jan Shatabdi
-   Successful Bookings: 1
+   Successful Bookings: 0
    Failed Bookings: 1
-   Total Fare Collected: 2952
+   Total Fare Collected: 0
 

@@ -23,5 +23,5 @@
 5) Jan Shatabdi
    Source: Pune
    Destination: Nagpur
-   Seats Available: 247
+   Seats Available: 250
 
