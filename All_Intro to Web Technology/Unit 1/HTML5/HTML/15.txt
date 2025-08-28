@@ -1,0 +1,5 @@
+1. search newly added elements of html
+
+2. Install Sublime text Ide
+
+3. Download and install Xamp

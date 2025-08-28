@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-align: center;
+}
+
+p.date {
+    text-align: right;
+}
+
+p.main {
+    text-align: justify;
+}
+</style>
+</head>
+<body>
+
+<h1>About A. P. J." Abdul Kalam</h1>
+<p class="date">August, 2015</p>
+<p class="main">Avul Pakir Jainulabdeen "A. P. J." Abdul Kalam (15 October 1931 – 27 July 2015) was the 11th President of India from 2002 to 2007. A career scientist[clarification needed] turned reluctant politician, Kalam was born and raised in Rameswaram, Tamil Nadu, and studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO) and was intimately involved in India's civilian space program and military missile development efforts.</p>
+
+<p><b>Note:</b> Resize the browser window to see how the value "justify" works.</p>
+
+</body>
+</html>

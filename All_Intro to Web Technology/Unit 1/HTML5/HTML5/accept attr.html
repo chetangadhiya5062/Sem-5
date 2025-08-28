@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input tag</title>
+</head>
+<body>
+<form>
+	Name:<input type="text" name="user name" autofocus>
+	<br><br>
+	Last Name:<input type="text" name="user email">
+	<br><br>
+	College name:<input type="texr" name="cname" disabled> <!--this will make college name field disabled user can not enter anything here-->
+	<br><br> 
+	<input type="file" >   <!-- a file chooser is created that will accept any type of file image, mp3, video-->
+	<br><br>
+	<input type="file" accept="audio/*" >   <!-- accept will help in choosing a particular type of file here it is audio means mp3 extension-->
+	<br><br>
+	<input type="file" accept="audio/*" >   <!-- here it aacepts only video file-->
+	<br><br>
+	<input type="file" accept="image/*" >   <!-- here it aacepts only image file-->
+	<br><br>
+	<input type="file" accept="image/*,audio/*,video/*" >   <!-- here it aacepts image, audio, video file-->
+	<br><br>
+	India <input type="checkbox" name="country" checked> <!-- checked will automatically check the india checkbox when page is loaded-->
+	Usa <input type="checkbox" name="country">
+	<br><br>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>

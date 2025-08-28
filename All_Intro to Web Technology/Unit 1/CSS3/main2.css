@@ -1,0 +1,18 @@
+body{
+	/*  background-image: url("images/n2.jpg"); */
+	/*background-size: auto;                    size: auto will keep the size of image same whereas size:cover will fit the image in the webpage*/
+	
+	/*background-size: cover;  */
+	
+	/*background-size: 500px 500px;                     /*manually set width of the image 500px and height 500px but the image will repeat */ 
+	
+
+	/*background-size: 500px
+	background-repeat: no-repeat;   /*no repeat will not repeat the image, repeatx will repeat the image x-axis, repeaty will repeat image in y-axis, 
+	repeat will repeat the image */ 
+
+	background-image: url(images/n1.jfif), url("images/n2.jpg"), url("images/n3.jpg"); /* if you need multiple images */
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 480px 700px;
+	background-position: 0px 0px, 480px 0px, 960px 0px;
+}

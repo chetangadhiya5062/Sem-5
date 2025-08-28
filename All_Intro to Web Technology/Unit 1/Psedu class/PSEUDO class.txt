@@ -1,0 +1,37 @@
+n, 2n+1
+nth-last-child
+nth-of-type(1)
+
+nth-last-of-type(1)
+
+div.container:only-of-type{
+color:red;
+} //single element
+
+
+div.container:only-child{
+color:red;
+} //single element
+
+div.container:empty
+{
+color:white;
+background-color:red;
+width:200px;
+height:30px;
+}
+
+
+div.box1:not(p)
+{
+color:red;
+}
+
+
+
+
+
+
+
+
+

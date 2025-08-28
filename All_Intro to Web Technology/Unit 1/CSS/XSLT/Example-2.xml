@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Example-2.xsl"?>
+<class>
+<student>Student-1</student>
+<student>Student-2</student>
+<student>Student-3</student>
+<teacher>Faculty</teacher>
+</class>

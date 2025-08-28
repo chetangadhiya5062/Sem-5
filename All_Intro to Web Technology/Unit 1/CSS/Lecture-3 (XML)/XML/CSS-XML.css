@@ -1,0 +1,24 @@
+BOOKLIST {
+    background-color: #00ffff;
+    width: 100%;
+}
+BOOK {
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+TITLE {
+    display: block;
+    color: red;
+    font-size: 20pt;
+}
+AUTHOR {
+    display: block;
+    color: blue;
+    font-size: 15pt;
+}
+COUNTRY, PRICE, YEAR, PUBLICATION {
+    display: block;
+    color:green;
+    margin-left: 20pt;
+}

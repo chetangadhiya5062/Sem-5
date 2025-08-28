@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageURL>~/Images/google-icon.png</ImageURL>
+    <NavigateURL>http://google.com</NavigateURL>
+    <AlternateText>Please visit http://www.google.com</AlternateText>
+    <Impressions>10</Impressions>
+    <keyword>Google</keyword>    
+  </Ad>
+ <Ad>
+    <ImageURL>~/Images/VIT.jpg</ImageURL>
+    <NavigateURL>http://vit.edu</NavigateURL>
+    <AlternateText>Please visit VIT college http://www.vit.edu</AlternateText>
+    <Impressions>30</Impressions>
+    <keyword>VIT College</keyword>
+  </Ad>
+  <Ad>
+    <ImageURL>~/Images/Gmail-icon.png</ImageURL>
+    <NavigateURL>http://gmail.com</NavigateURL>
+    <AlternateText>Please visit gmail page http://www.gmail.com</AlternateText>
+    <Impressions>15</Impressions>
+    <keyword>Google</keyword>
+  </Ad>
+  
+</Advertisements>

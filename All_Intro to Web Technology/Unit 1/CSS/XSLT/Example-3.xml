@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Example-3.xsl"?>
+<Book>
+  <Title>C Programming FAQ's</Title>
+  <Authors>
+    <Author>Mr. Steve Summit</Author>
+    <Author>Mr. Balaguru swami</Author>
+  </Authors>
+  <Body>C Programming book is good for FAQ's.</Body>
+</Book>

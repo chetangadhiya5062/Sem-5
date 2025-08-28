@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<select onchange="myfunc()" id="selectopt">
+    <option value="Mr.">male</option>
+    <option value="Ms.">female</option>
+	</select>
+<p id="p1"></p>
+<script>
+	function myfunc()
+	{
+			var val;
+			val=document.getElementById("selectopt").value;
+			alert(val);
+			document.getElementById("p1").innerHTML= val;
+	
+	}
+</script>
+
+</body>
+</html>

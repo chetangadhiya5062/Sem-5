@@ -1,0 +1,51 @@
+<!Doctype html>
+<head>
+
+<script>
+function myFunctionPush() 
+{
+	
+	var length;
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	
+	length=fruits.push("Lemon"); 
+
+	var text = " ";
+    	
+	for (index = 0; index < length; index++) {
+        text +=fruits[index] + "<br/>";
+    }
+   
+    	document.getElementById("demoPush").innerHTML = text;
+}
+
+function myFunctionPop()
+{
+	var poppedEle;
+	
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	
+	poppedEle=fruits.pop(); 
+	
+	
+	var text = " ";
+    	
+	for (index = 0; index < fruits.length; index++) {
+        text +="<br/>"+fruits[index] + "<br/>";
+    }
+   
+    	document.getElementById("demoPop").innerHTML = text;
+
+}
+</script>
+
+</head>
+
+<html>
+
+<button type="buttonPush" onclick="myFunctionPush()">Push</button>
+<button type="buttonPop" onclick="myFunctionPop()">Pop</button>
+<div id="demoPush"></div>
+<div id="demoPop"></div>
+</html>
+

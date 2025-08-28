@@ -1,0 +1,12 @@
+p{
+	font-family:tahoma;
+	font-size:22px;
+	padding-left:40px;
+}
+.box1, .box2{
+	padding:25px 10px;
+	border:2px solid gray;
+}
+div.container p:last-child{
+	color:red;
+}

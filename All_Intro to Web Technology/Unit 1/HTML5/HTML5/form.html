@@ -1,0 +1,20 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+<form id="myform">
+	First Name:<input type="text" name="fname">
+	<br><br>
+	<input type="submit" name="SUBMIT">
+</form>
+<br><br>
+<p>
+	Outside the form element.
+</p>
+Last name:<input type="text" name="lname" form="myform"> <!--as the form is assigned with the id of the above form now Last name will also be considered under above form-->
+
+</body>
+</html>

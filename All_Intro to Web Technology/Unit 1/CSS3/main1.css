@@ -1,0 +1,24 @@
+h1{                                /* h1 is selector. now we have to set property for it. */
+color: blue;                       /* it can be used with text  color can be expressed using rgb(0,0,0) or rgb(255,0,0)*/
+background-color: green;          /*it can be used with text only colors can be expressed using rgb value. before 6 or 3 digit hexa color code 
+use #ff0000 means red color. even you can express #f00,#e00 for different versions of red*/
+border: 5px solid red;             /*it can be used with any tag*/
+}
+
+h2
+{
+	color: blue;
+	background-color: rgba(0,0,0,0.5);
+	border: 5px solid red;
+}
+p
+{
+	color: blue;
+	//background-color: rgba(0,0,0,0.5);
+	//border: 5px solid red;
+}
+
+body {
+	background-color: yellow;
+}
+
