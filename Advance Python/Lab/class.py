@@ -13,27 +13,24 @@ def is_prime(n):
             return False
     return True
 
-# Worker function for threads
 def sum_primes(start, end, result, idx):
-    total = 0
+    s = 0
     for i in range(start, end + 1):
         if is_prime(i):
-            total += i
-    result[idx] = total
+            s += i
+    result[idx] = s
 
-# ---------------- Without Threads ----------------
 start = time.time()
-total = 0
+single_sum = 0
 for i in range(2, 1000001):
     if is_prime(i):
-        total += i
+        single_sum += i
 end = time.time()
 
 print("Without Thread")
-print(f"Sum of primes : {total}.")
-print(f"Time taken : {end - start} seconds.\n")
+print(f"Sum of primes : {single_sum}")
+print(f"Time taken : {end - start} seconds\n")
 
-# ---------------- With Threads ----------------
 print("With Threads")
 result = {}
 threads = [
@@ -44,13 +41,11 @@ threads = [
 ]
 
 start_time = time.time()
-for t in threads:
-    t.start()
-for t in threads:
-    t.join()
+for t in threads: t.start()
+for t in threads: t.join()
 
-total = sum(result.values())
+multi_sum = sum(result.values())
 end_time = time.time()
 
-print(f"Sum of primes : {total}.")
-print(f"Time taken with threads : {end_time - start_time} seconds.")
+print(f"Sum of primes : {multi_sum}")
+print(f"Time taken with threads : {end_time - start_time} seconds")
