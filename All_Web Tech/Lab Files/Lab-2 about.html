@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2 - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://via.placeholder.com/1200x200/ff69b4/ffffff');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 105, 180, 0.8), rgba(255, 182, 193, 0.8));
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: slideInLeft 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: slideInRight 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 18px 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after {
+            width: 80%;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            border-radius: 2px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .info {
+            font-size: 1.2rem;
+            color: #333;
+            text-indent: 30px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .info b {
+            color: #ff69b4;
+            font-weight: 600;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: #ff69b4;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-shadow: none;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 1rem;
+            text-shadow: none;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            text-shadow: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                padding: 15px 20px;
+                font-size: 0.9rem;
+            }
+            
+            main {
+                padding: 20px 15px;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .info-card {
+                padding: 25px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+        <p>Learn more about this project</p>
+    </header>
+
+    <nav>
+        <a href="Lab-2 index.html">Home</a>
+        <a href="Lab-2 about.html">About</a>
+        <a href="Lab-2 gallery.html">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>What is this Experiment?</h2>
+        <div class="info-card">
+            <p class="info">
+                This experiment demonstrates the use of HTML and CSS in designing a front page.
+                Various CSS properties such as <b>background-color</b>, <b>font-style</b>, <b>text-transform</b>,
+                <b>display</b>, and <b>box-sizing</b> are shown in practice.
+            </p>
+        </div>
+
+        <h2>Why CSS?</h2>
+        <div class="info-card">
+            <p class="info">
+                CSS (Cascading Style Sheets) is used to style and design webpages. It separates
+                content from design, making it easier to manage large websites with consistent looks.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Modern Design</h3>
+                <p>Beautiful gradients, shadows, and animations create an engaging user experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Responsive Layout</h3>
+                <p>Adapts perfectly to different screen sizes and devices for optimal viewing.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Interactive Elements</h3>
+                <p>Hover effects and smooth transitions make the website feel alive and dynamic.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | About Page</p>
+    </footer>
+
+</body>
+</html>

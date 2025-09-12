@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 3 & 4 - JavaScript Basics + Form Handling</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      min-height: 100vh;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    h1, h2 {
+      margin: 10px 0;
+    }
+    .section {
+      background: white;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 800px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    button, input[type="submit"] {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    button:hover, input[type="submit"]:hover {
+      background: #2980b9;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input[type="text"], form input[type="number"] {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    #output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+    #data-table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    #data-table th {
+      background: #34495e;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    #data-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    #data-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    #data-table tr:hover {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lab 3 & Lab 4 - JavaScript Practical</h1>
+  </header>
+
+  <!-- ================= LAB 3 ================= -->
+  <div class="section">
+    <h2>Lab 3: JavaScript Basics</h2>
+    <p>Check the console (<kbd>F12 → Console</kbd>) for variable & loop output.</p>
+    <div style="text-align:center;">
+      <button id="clickBtn">Click Me (Event Handling)</button>
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <!-- ================= LAB 4 ================= -->
+  <div class="section">
+    <h2>Lab 4: Form Data → Table</h2>
+    <form id="myform">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+
+      <label><input type="radio" name="gender" value="Male" required> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <table id="data-table"></table>
+  </div>
+
+  <script>
+    /* ========== LAB 3 SCRIPT ========== */
+    // Variables
+    var a = 10;
+    let b = 20;
+    const PI = 3.14;
+    console.log("Var a:", a, "Let b:", b, "Const PI:", PI);
+
+    // Loops
+    console.log("For loop:");
+    for (let i = 0; i < 3; i++) {
+      console.log("i =", i);
+    }
+
+    console.log("While loop:");
+    let x = 0;
+    while (x < 3) {
+      console.log("x =", x);
+      x++;
+    }
+
+    console.log("Do-While loop:");
+    let y = 0;
+    do {
+      console.log("y =", y);
+      y++;
+    } while (y < 3);
+
+    console.log("For-of loop:");
+    const arr = [10, 20, 30];
+    for (const value of arr) {
+      console.log(value);
+    }
+
+    console.log("For-in loop:");
+    const obj = { name: "John", age: 22 };
+    for (const key in obj) {
+      console.log(key, "=", obj[key]);
+    }
+
+    // Event handling
+    const btn = document.getElementById("clickBtn");
+    const output = document.getElementById("output");
+
+    btn.addEventListener("click", function() {
+      output.innerText = "Button was clicked!";
+    });
+
+    // Selection of Elements
+    console.log("getElementById:", document.getElementById("clickBtn").innerText);
+    console.log("querySelector:", document.querySelector("#clickBtn").innerText);
+
+    /* ========== LAB 4 SCRIPT ========== */
+    const form = document.getElementById("myform");
+
+    function getGender() {
+      const radios = document.getElementsByName('gender');
+      for (let radio of radios) {
+        if (radio.checked) {
+          return radio.value;
+        }
+      }
+    }
+
+    function addDataToTable(name, age, gender) {
+      const table = document.getElementById('data-table');
+
+      if (table.rows.length === 0) {
+        const header = table.insertRow();
+        header.insertCell(0).outerHTML = "<th>Name</th>";
+        header.insertCell(1).outerHTML = "<th>Age</th>";
+        header.insertCell(2).outerHTML = "<th>Gender</th>";
+      }
+
+      const row = table.insertRow();
+      row.insertCell(0).innerText = name;
+      row.insertCell(1).innerText = age;
+      row.insertCell(2).innerText = gender;
+    }
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const formdata = new FormData(form);
+      const name = formdata.get("fname");
+      const age = formdata.get("age");
+      const gender = getGender();
+      addDataToTable(name, age, gender);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
