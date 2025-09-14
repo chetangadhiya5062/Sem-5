@@ -1,0 +1,35 @@
+Product: Camera
+Average Rating: 3.46
+Total Reviews: 13
+----------------------------------------
+Product: Smartphone
+Average Rating: 3.33
+Total Reviews: 12
+----------------------------------------
+Product: Printer
+Average Rating: 3.00
+Total Reviews: 13
+----------------------------------------
+Product: Headphones
+Average Rating: 2.71
+Total Reviews: 17
+----------------------------------------
+Product: Laptop
+Average Rating: 3.07
+Total Reviews: 15
+----------------------------------------
+Product: Smartwatch
+Average Rating: 3.12
+Total Reviews: 17
+----------------------------------------
+Product: Tablet
+Average Rating: 2.54
+Total Reviews: 13
+----------------------------------------
+
+Top 5 Products:
+Camera - 3.46
+Smartphone - 3.33
+Smartwatch - 3.12
+Laptop - 3.07
+Printer - 3.00
