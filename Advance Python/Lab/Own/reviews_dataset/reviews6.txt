@@ -1,0 +1,500 @@
+Product: Printer
+Customer: Steve
+Rating: 4
+Review: Good Printer, but could be better.
+
+Product: Tablet
+Customer: Tina
+Rating: 3
+Review: Loving my new Tablet, works perfectly.
+
+Product: Laptop
+Customer: Frank
+Rating: 2
+Review: Laptop quality is below expectations.
+
+Product: Laptop
+Customer: Karen
+Rating: 4
+Review: Great value for money Laptop.
+
+Product: Printer
+Customer: Alice
+Rating: 2
+Review: Excellent Printer, highly recommend!
+
+Product: Tablet
+Customer: Charlie
+Rating: 2
+Review: This Tablet exceeded my expectations!
+
+Product: Camera
+Customer: Leo
+Rating: 5
+Review: Poor performance from this Camera.
+
+Product: Printer
+Customer: Frank
+Rating: 4
+Review: Printer quality is below expectations.
+
+Product: Camera
+Customer: Nina
+Rating: 5
+Review: Loving my new Camera, works perfectly.
+
+Product: Headphones
+Customer: Steve
+Rating: 2
+Review: Headphones quality is below expectations.
+
+Product: Smartphone
+Customer: Jack
+Rating: 3
+Review: Average Smartphone, nothing special.
+
+Product: Smartwatch
+Customer: Eva
+Rating: 5
+Review: This Smartwatch exceeded my expectations!
+
+Product: Headphones
+Customer: Charlie
+Rating: 4
+Review: Headphones quality is below expectations.
+
+Product: Printer
+Customer: Eva
+Rating: 4
+Review: Good Printer, but could be better.
+
+Product: Smartwatch
+Customer: Leo
+Rating: 1
+Review: Great value for money Smartwatch.
+
+Product: Laptop
+Customer: Paul
+Rating: 3
+Review: Average Laptop, nothing special.
+
+Product: Smartwatch
+Customer: Karen
+Rating: 3
+Review: This Smartwatch exceeded my expectations!
+
+Product: Camera
+Customer: Steve
+Rating: 5
+Review: Average Camera, nothing special.
+
+Product: Smartwatch
+Customer: Jack
+Rating: 5
+Review: Average Smartwatch, nothing special.
+
+Product: Headphones
+Customer: Karen
+Rating: 2
+Review: Good Headphones, but could be better.
+
+Product: Printer
+Customer: Tina
+Rating: 3
+Review: Good Printer, but could be better.
+
+Product: Headphones
+Customer: Steve
+Rating: 4
+Review: Great value for money Headphones.
+
+Product: Laptop
+Customer: Steve
+Rating: 5
+Review: This Laptop exceeded my expectations!
+
+Product: Smartwatch
+Customer: David
+Rating: 5
+Review: Loving my new Smartwatch, works perfectly.
+
+Product: Tablet
+Customer: Oscar
+Rating: 1
+Review: Average Tablet, nothing special.
+
+Product: Laptop
+Customer: Frank
+Rating: 1
+Review: Laptop is durable and reliable.
+
+Product: Laptop
+Customer: Paul
+Rating: 4
+Review: Average Laptop, nothing special.
+
+Product: Smartphone
+Customer: Frank
+Rating: 2
+Review: Poor performance from this Smartphone.
+
+Product: Smartwatch
+Customer: Quincy
+Rating: 3
+Review: Smartwatch is durable and reliable.
+
+Product: Tablet
+Customer: Jack
+Rating: 2
+Review: Average Tablet, nothing special.
+
+Product: Printer
+Customer: Karen
+Rating: 3
+Review: This Printer exceeded my expectations!
+
+Product: Tablet
+Customer: Oscar
+Rating: 4
+Review: Good Tablet, but could be better.
+
+Product: Laptop
+Customer: Nina
+Rating: 3
+Review: This Laptop exceeded my expectations!
+
+Product: Printer
+Customer: Rita
+Rating: 2
+Review: Printer quality is below expectations.
+
+Product: Camera
+Customer: Frank
+Rating: 1
+Review: Loving my new Camera, works perfectly.
+
+Product: Laptop
+Customer: Tina
+Rating: 2
+Review: Excellent Laptop, highly recommend!
+
+Product: Headphones
+Customer: David
+Rating: 2
+Review: This Headphones exceeded my expectations!
+
+Product: Tablet
+Customer: Mona
+Rating: 3
+Review: Loving my new Tablet, works perfectly.
+
+Product: Smartphone
+Customer: Charlie
+Rating: 4
+Review: Not happy with this Smartphone, disappointed.
+
+Product: Camera
+Customer: Jack
+Rating: 1
+Review: Average Camera, nothing special.
+
+Product: Headphones
+Customer: Nina
+Rating: 3
+Review: Not happy with this Headphones, disappointed.
+
+Product: Laptop
+Customer: Irene
+Rating: 1
+Review: Poor performance from this Laptop.
+
+Product: Smartwatch
+Customer: Karen
+Rating: 5
+Review: Loving my new Smartwatch, works perfectly.
+
+Product: Tablet
+Customer: Irene
+Rating: 3
+Review: Average Tablet, nothing special.
+
+Product: Headphones
+Customer: Irene
+Rating: 2
+Review: Poor performance from this Headphones.
+
+Product: Camera
+Customer: Frank
+Rating: 4
+Review: This Camera exceeded my expectations!
+
+Product: Smartwatch
+Customer: Quincy
+Rating: 2
+Review: Great value for money Smartwatch.
+
+Product: Camera
+Customer: Eva
+Rating: 2
+Review: Camera is durable and reliable.
+
+Product: Laptop
+Customer: Tina
+Rating: 4
+Review: Loving my new Laptop, works perfectly.
+
+Product: Laptop
+Customer: Quincy
+Rating: 3
+Review: Laptop is durable and reliable.
+
+Product: Tablet
+Customer: Tina
+Rating: 2
+Review: Tablet quality is below expectations.
+
+Product: Smartphone
+Customer: Rita
+Rating: 1
+Review: Average Smartphone, nothing special.
+
+Product: Tablet
+Customer: Charlie
+Rating: 2
+Review: Tablet quality is below expectations.
+
+Product: Smartwatch
+Customer: Alice
+Rating: 3
+Review: Loving my new Smartwatch, works perfectly.
+
+Product: Camera
+Customer: Tina
+Rating: 1
+Review: This Camera exceeded my expectations!
+
+Product: Laptop
+Customer: Grace
+Rating: 5
+Review: Not happy with this Laptop, disappointed.
+
+Product: Headphones
+Customer: Charlie
+Rating: 3
+Review: Headphones quality is below expectations.
+
+Product: Smartphone
+Customer: Grace
+Rating: 4
+Review: Not happy with this Smartphone, disappointed.
+
+Product: Tablet
+Customer: Frank
+Rating: 4
+Review: Loving my new Tablet, works perfectly.
+
+Product: Printer
+Customer: Paul
+Rating: 4
+Review: Good Printer, but could be better.
+
+Product: Laptop
+Customer: David
+Rating: 4
+Review: Laptop quality is below expectations.
+
+Product: Headphones
+Customer: Jack
+Rating: 2
+Review: Average Headphones, nothing special.
+
+Product: Headphones
+Customer: Charlie
+Rating: 4
+Review: Headphones quality is below expectations.
+
+Product: Smartphone
+Customer: Bob
+Rating: 4
+Review: Smartphone quality is below expectations.
+
+Product: Headphones
+Customer: Oscar
+Rating: 2
+Review: Headphones is durable and reliable.
+
+Product: Camera
+Customer: Jack
+Rating: 1
+Review: Poor performance from this Camera.
+
+Product: Tablet
+Customer: Irene
+Rating: 1
+Review: Tablet is durable and reliable.
+
+Product: Smartphone
+Customer: Mona
+Rating: 1
+Review: Not happy with this Smartphone, disappointed.
+
+Product: Camera
+Customer: Tina
+Rating: 4
+Review: Average Camera, nothing special.
+
+Product: Camera
+Customer: Charlie
+Rating: 1
+Review: Good Camera, but could be better.
+
+Product: Laptop
+Customer: Bob
+Rating: 2
+Review: Loving my new Laptop, works perfectly.
+
+Product: Headphones
+Customer: Bob
+Rating: 2
+Review: Loving my new Headphones, works perfectly.
+
+Product: Smartphone
+Customer: Bob
+Rating: 5
+Review: Poor performance from this Smartphone.
+
+Product: Laptop
+Customer: Rita
+Rating: 3
+Review: Laptop is durable and reliable.
+
+Product: Smartwatch
+Customer: Quincy
+Rating: 3
+Review: Poor performance from this Smartwatch.
+
+Product: Smartphone
+Customer: Alice
+Rating: 4
+Review: Poor performance from this Smartphone.
+
+Product: Smartwatch
+Customer: Paul
+Rating: 2
+Review: Poor performance from this Smartwatch.
+
+Product: Printer
+Customer: David
+Rating: 1
+Review: This Printer exceeded my expectations!
+
+Product: Printer
+Customer: Grace
+Rating: 4
+Review: Not happy with this Printer, disappointed.
+
+Product: Camera
+Customer: Steve
+Rating: 3
+Review: Poor performance from this Camera.
+
+Product: Tablet
+Customer: Steve
+Rating: 3
+Review: Poor performance from this Tablet.
+
+Product: Camera
+Customer: David
+Rating: 5
+Review: This Camera exceeded my expectations!
+
+Product: Smartwatch
+Customer: Oscar
+Rating: 5
+Review: Not happy with this Smartwatch, disappointed.
+
+Product: Printer
+Customer: Frank
+Rating: 5
+Review: Not happy with this Printer, disappointed.
+
+Product: Headphones
+Customer: David
+Rating: 3
+Review: Poor performance from this Headphones.
+
+Product: Tablet
+Customer: Henry
+Rating: 2
+Review: Poor performance from this Tablet.
+
+Product: Printer
+Customer: Bob
+Rating: 1
+Review: Printer quality is below expectations.
+
+Product: Headphones
+Customer: Henry
+Rating: 3
+Review: Loving my new Headphones, works perfectly.
+
+Product: Camera
+Customer: Mona
+Rating: 1
+Review: Poor performance from this Camera.
+
+Product: Camera
+Customer: Bob
+Rating: 4
+Review: Camera quality is below expectations.
+
+Product: Laptop
+Customer: Bob
+Rating: 4
+Review: This Laptop exceeded my expectations!
+
+Product: Laptop
+Customer: Bob
+Rating: 2
+Review: Great value for money Laptop.
+
+Product: Printer
+Customer: Bob
+Rating: 5
+Review: Printer is durable and reliable.
+
+Product: Smartphone
+Customer: Oscar
+Rating: 2
+Review: Poor performance from this Smartphone.
+
+Product: Headphones
+Customer: Bob
+Rating: 1
+Review: Excellent Headphones, highly recommend!
+
+Product: Laptop
+Customer: Steve
+Rating: 2
+Review: Laptop quality is below expectations.
+
+Product: Camera
+Customer: Oscar
+Rating: 1
+Review: Average Camera, nothing special.
+
+Product: Smartwatch
+Customer: Grace
+Rating: 2
+Review: Not happy with this Smartwatch, disappointed.
+
+Product: Printer
+Customer: Rita
+Rating: 4
+Review: Printer is durable and reliable.
+
+Product: Laptop
+Customer: Henry
+Rating: 3
+Review: This Laptop exceeded my expectations!
+
